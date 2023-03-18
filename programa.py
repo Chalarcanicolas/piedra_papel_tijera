@@ -12,34 +12,44 @@ print("3 es tijera")
 
 # input
 
-j = int(input("Digite la opción: "))
+j1 = int(input("Elija: "))
     
 # processing
 
-m = random.randint(1,3)
+cpu = random.randint(1,3)
 
-if (j == 1):
-    if (m == 1 ):
+if (j1 == 1):
+    if (cpu == 1):
         print("Empate")
-    elif (m==2):
+        print("Sacaste " + str (j1) + " la cpu saco " + str (cpu))
+    elif (cpu == 2):
         print("Perdiste")
+        print("Sacaste " + str (j1) + " la cpu saco " + str (cpu))
     else:
         print("Ganaste")
+        print("Sacaste " + str (j1) + " la cpu saco " + str (cpu))
 
-if (j == 2):
-    if (m == 1):
+if (j1 == 2):
+    if (cpu == 1):
         print("Ganaste")
-    elif (m == 2):
+        print("Sacaste " + str (j1) + " la cpu saco " + str (cpu))
+    elif (cpu == 2):
         print("Empate")
+        print("Sacaste " + str (j1) + " la cpu saco " + str (cpu))
     else:
         print ("Empate")
+        print("Sacaste " + str (j1) + " la cpu saco " + str (cpu))
     
-
-if (j == 3):
-    if ( m == 1):
+if (j1 == 3):
+    if (cpu == 1):
         print ("Perdiste")
-    elif ( m ==2):
+        print("Sacaste " + str (j1) + " la cpu saco " + str (cpu))
+    elif (cpu == 2):
         print("Ganaste")
+        print("Sacaste " + str (j1) + " la cpu saco " + str (cpu))
     else:
         print("Empate")
+        print("Sacaste " + str (j1) + " la cpu saco " + str (cpu))
+if (j1 > 3):
+    print("Ingresaste algo mayor que 3 o una letra no válida,vuelve a intentar otra vez")
     
